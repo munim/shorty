@@ -5,7 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shorty.Mvc", "Shorty.Mvc\Shorty.Mvc.csproj", "{59A74CF2-051E-43F6-B805-7FB7B2B97090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shorty.Data", "..\Shorty.Data\Shorty.Data.csproj", "{46218A40-FCFE-453E-88C5-12AA51F63346}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC1BBB74-895B-4D9C-BFE2-417F5AA86C09}"
+	ProjectSection(SolutionItems) = preProject
+		Shorty.Data\Shorty.Data.csproj = Shorty.Data\Shorty.Data.csproj
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,6 @@ Global
 		{59A74CF2-051E-43F6-B805-7FB7B2B97090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59A74CF2-051E-43F6-B805-7FB7B2B97090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59A74CF2-051E-43F6-B805-7FB7B2B97090}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46218A40-FCFE-453E-88C5-12AA51F63346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46218A40-FCFE-453E-88C5-12AA51F63346}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46218A40-FCFE-453E-88C5-12AA51F63346}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46218A40-FCFE-453E-88C5-12AA51F63346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
