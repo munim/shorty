@@ -28,6 +28,18 @@ namespace Shorty.Data.Migrations
             CreateRoles(context);
             AddUsersToRoles(context);
 
+            CreateUrlEntry(context);
+        }
+
+        private void CreateUrlEntry(AppDbContext context)
+        {
+            context.Urls.AddOrUpdate(p=>p.ShortUrl, new Url()
+            {
+                ShortUrl = "g",
+                FullUrl = "http://google.com/",
+                CreatedDate = DateTimeOffset.UtcNow,
+                OwnedBy = new AppUserManager(context).FindByName("anonymous"),
+            });
         }
 
         private void AddUsersToRoles(AppDbContext context)

@@ -60,6 +60,7 @@
     <Compile Include="DataObjects\AppUser.cs" />
     <Compile Include="Managers\AppRoleManager.cs" />
     <Compile Include="Managers\AppUserManager.cs" />
+    <Compile Include="Managers\UrlManager.cs" />
     <Compile Include="Migrations\201511021442037_Initial.cs" />
     <Compile Include="Migrations\201511021442037_Initial.Designer.cs">
       <DependentUpon>201511021442037_Initial.cs</DependentUpon>
