@@ -8,7 +8,7 @@ using Shorty.Data.DataObjects;
 
 namespace Shorty.Data.Managers
 {
-    public class UrlManager
+    public class ShortUrlService : ServiceBase
     {
         public async Task<string> GetLongUrl(string shortUrl)
         {
@@ -21,5 +21,10 @@ namespace Shorty.Data.Managers
                 return url.FullUrl;
             }
         }
+    }
+
+    public class ServiceBase
+    {
+        protected AppDbContext DbContext { get; set; }
     }
 }

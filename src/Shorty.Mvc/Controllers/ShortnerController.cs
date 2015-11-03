@@ -4,19 +4,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Shorty.Data;
 using Shorty.Data.Managers;
 
 namespace Shorty.Mvc.Controllers
 {
     public class ShortnerController : AsyncController
     {
+        private readonly ShortUrlService _shortUrlService;
+
+        public ShortnerController(ShortUrlService shortUrlService)
+        {
+            _shortUrlService = shortUrlService;
+        }
+
         //
         // GET: /Shortner/
         public async Task<ActionResult> Redirect(string shortUrl)
         {
-            var urlManager = new UrlManager();
 
-            var longUrl = await urlManager.GetLongUrl(shortUrl);
+            var longUrl = await _shortUrlService.GetLongUrl(shortUrl);
 
             if (string.IsNullOrWhiteSpace(longUrl))
             {
