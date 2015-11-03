@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,7 +61,7 @@
     <Compile Include="DataObjects\AppUser.cs" />
     <Compile Include="Managers\AppRoleManager.cs" />
     <Compile Include="Managers\AppUserManager.cs" />
-    <Compile Include="Managers\UrlManager.cs" />
+    <Compile Include="Managers\ShortUrlService.cs" />
     <Compile Include="Migrations\201511021442037_Initial.cs" />
     <Compile Include="Migrations\201511021442037_Initial.Designer.cs">
       <DependentUpon>201511021442037_Initial.cs</DependentUpon>
@@ -78,6 +79,9 @@
     <EmbeddedResource Include="Migrations\201511021442037_Initial.resx">
       <DependentUpon>201511021442037_Initial.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
