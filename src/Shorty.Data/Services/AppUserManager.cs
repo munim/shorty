@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Shorty.Core.Data;
+using Shorty.Core.Data.Objects;
 using Shorty.Data;
-using Shorty.Data.Data.Objects;
 
 namespace Shorty.Core.Services
 {

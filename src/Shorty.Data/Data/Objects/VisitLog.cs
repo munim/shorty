@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Shorty.Data.DataObjects
+namespace Shorty.Core.Data.Objects
 {
     public class VisitLog
     {

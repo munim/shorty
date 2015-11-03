@@ -6,7 +6,6 @@ using Shorty.Core.Data;
 using Shorty.Core.Data.Objects;
 using Shorty.Core.Services;
 using Shorty.Data;
-using Shorty.Data.Data.Objects;
 using Shorty.Data.Managers;
 
 namespace Shorty.Core.Migrations

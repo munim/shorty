@@ -22,6 +22,6 @@ namespace Shorty.Core.Services
 
     public class ServiceBase
     {
-        protected AppDbContext DbContext { get; set; }
+        public AppDbContext DbContext { get; set; }
     }
 }

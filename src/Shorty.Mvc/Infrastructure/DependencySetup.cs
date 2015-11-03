@@ -5,7 +5,10 @@ using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using Autofac;
+using Autofac.Builder;
+using Autofac.Features.Scanning;
 using Autofac.Integration.Mvc;
+using Shorty.Core;
 using Shorty.Core.Data;
 using Shorty.Data;
 
@@ -25,9 +28,7 @@ namespace Shorty.Mvc.Infrastructure
                 .AsSelf()
                 .InstancePerRequest();
 
-            builder.RegisterAssemblyTypes(Assembly.Load("Shorty.Core")).Where(t => t.Name.EndsWith("Service"))
-                .AsImplementedInterfaces()
-                .PropertiesAutowired();
+            builder.RegisterModule(new AutofacServiceModule());
 
             var container = builder.Build();
 
