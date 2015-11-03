@@ -203,9 +203,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Shorty.Data\Shorty.Data.csproj">
+    <ProjectReference Include="..\Shorty.Data\Shorty.Core.csproj">
       <Project>{46218A40-FCFE-453E-88C5-12AA51F63346}</Project>
-      <Name>Shorty.Data</Name>
+      <Name>Shorty.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

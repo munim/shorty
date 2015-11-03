@@ -1,23 +1,24 @@
+using System;
+using System.Data.Entity.Migrations;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Shorty.Data.DataObjects;
+using Shorty.Core.Data;
+using Shorty.Core.Data.Objects;
+using Shorty.Core.Services;
+using Shorty.Data;
+using Shorty.Data.Data.Objects;
 using Shorty.Data.Managers;
 
-namespace Shorty.Data.Migrations
+namespace Shorty.Core.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<Shorty.Data.AppDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<AppDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Shorty.Data.AppDbContext context)
+        protected override void Seed(AppDbContext context)
         {
             CreateUsersAndRoles(context);
         }

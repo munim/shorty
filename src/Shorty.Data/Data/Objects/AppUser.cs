@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace Shorty.Data.DataObjects
+namespace Shorty.Data.Data.Objects
 {
     public class AppUser : IdentityUser
     {

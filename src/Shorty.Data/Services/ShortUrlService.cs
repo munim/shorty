@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
+﻿using System.Data.Entity;
 using System.Threading.Tasks;
-using Shorty.Data.DataObjects;
+using Shorty.Core.Data;
+using Shorty.Data;
 
-namespace Shorty.Data.Managers
+namespace Shorty.Core.Services
 {
     public class ShortUrlService : ServiceBase
     {

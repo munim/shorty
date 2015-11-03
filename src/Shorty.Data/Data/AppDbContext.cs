@@ -1,8 +1,10 @@
 ﻿using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Shorty.Core.Data.Objects;
+using Shorty.Data.Data.Objects;
 using Shorty.Data.DataObjects;
 
-namespace Shorty.Data
+namespace Shorty.Core.Data
 {
     public class AppDbContext : IdentityDbContext<AppUser>
     {

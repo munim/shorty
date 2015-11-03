@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Autofac;
 using Autofac.Integration.Mvc;
+using Shorty.Core.Data;
 using Shorty.Data;
 
 namespace Shorty.Mvc.Infrastructure
@@ -24,7 +25,7 @@ namespace Shorty.Mvc.Infrastructure
                 .AsSelf()
                 .InstancePerRequest();
 
-            builder.RegisterAssemblyTypes(Assembly.Load("Shorty.Data")).Where(t => t.Name.EndsWith("Service"))
+            builder.RegisterAssemblyTypes(Assembly.Load("Shorty.Core")).Where(t => t.Name.EndsWith("Service"))
                 .AsImplementedInterfaces()
                 .PropertiesAutowired();
 

@@ -7,8 +7,8 @@
     <ProjectGuid>{46218A40-FCFE-453E-88C5-12AA51F63346}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shorty.Data</RootNamespace>
-    <AssemblyName>Shorty.Data</AssemblyName>
+    <RootNamespace>Shorty.Core</RootNamespace>
+    <AssemblyName>Shorty.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -57,19 +57,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppDbContext.cs" />
-    <Compile Include="DataObjects\AppUser.cs" />
-    <Compile Include="Managers\AppRoleManager.cs" />
-    <Compile Include="Managers\AppUserManager.cs" />
-    <Compile Include="Managers\ShortUrlService.cs" />
+    <Compile Include="DataObjects\VisitLog.cs" />
+    <Compile Include="Data\AppDbContext.cs" />
+    <Compile Include="Data\Objects\AppUser.cs" />
+    <Compile Include="Services\AppRoleManager.cs" />
+    <Compile Include="Services\AppUserManager.cs" />
+    <Compile Include="Services\ShortUrlService.cs" />
     <Compile Include="Migrations\201511021442037_Initial.cs" />
     <Compile Include="Migrations\201511021442037_Initial.Designer.cs">
       <DependentUpon>201511021442037_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataObjects\Url.cs" />
-    <Compile Include="DataObjects\VisitLog.cs" />
+    <Compile Include="Data\Objects\Url.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -80,9 +80,7 @@
       <DependentUpon>201511021442037_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

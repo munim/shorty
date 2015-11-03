@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Shorty.Data.DataObjects;
+using Shorty.Core.Data;
+using Shorty.Data;
+using Shorty.Data.Data.Objects;
 
-namespace Shorty.Data.Managers
+namespace Shorty.Core.Services
 {
     public class AppUserManager : UserManager<AppUser>
     {

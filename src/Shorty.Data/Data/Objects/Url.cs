@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Shorty.Data.Data.Objects;
+using Shorty.Data.DataObjects;
 
-namespace Shorty.Data.DataObjects
+namespace Shorty.Core.Data.Objects
 {
     public class Url
     {

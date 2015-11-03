@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shorty.Mvc", "Shorty.Mvc\Shorty.Mvc.csproj", "{59A74CF2-051E-43F6-B805-7FB7B2B97090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shorty.Data", "Shorty.Data\Shorty.Data.csproj", "{46218A40-FCFE-453E-88C5-12AA51F63346}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shorty.Core", "Shorty.Data\Shorty.Core.csproj", "{46218A40-FCFE-453E-88C5-12AA51F63346}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
