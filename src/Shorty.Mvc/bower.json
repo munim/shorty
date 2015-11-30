@@ -1,0 +1,23 @@
+{
+  "name": "Shorty.Mvc",
+  "version": "0.0.0",
+  "homepage": "https://github.com/munim/shorty",
+  "authors": [
+    "Abdul Munim <iam@munim.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "respond": "~1.4.2",
+    "modernizr-min": "~3.2.0",
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.1.4",
+    "jquery-validate": "~1.14.0"
+  }
+}
